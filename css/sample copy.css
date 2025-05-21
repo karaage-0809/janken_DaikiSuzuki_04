@@ -1,0 +1,123 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    height: calc(100% - 160px); /* ヘッダーとフッターの高さを引いた高さ（例：80+80px） */
+}
+
+header, footer{
+    background-color: #fff;
+    text-align: center;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    font-size: 36px;
+}
+
+footer{
+font-size: 36px;
+}
+
+main{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+}
+
+
+p{
+    font-size:24px;
+    text-align: center;
+    height:auto;
+}
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+    
+}
+li{
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #FFF;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    text-align: center;
+}
+li:hover{
+    background: #0066CC;
+    color:#fff;
+}
+
+.com {
+    border-top: solid black 1px;
+    
+}
+
+.human-container{
+    width: 33%;
+    height: auto;
+    background-color: #a2d0ff;
+    
+}
+
+.com-container{
+    width: 33%;
+    height: auto;
+    background-color: rgb(255, 176, 245);
+}
+
+
+
+.result-container {
+    font-size: 30px;
+    font-weight: bold;
+    width: auto;
+    height: 50%;
+    text-align: center;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 上下中央 */
+    align-items: center;     /* 左右中央 */
+    text-align: center;
+    
+}
+
+.human-container, .com-container, .score-box {
+    flex: 1;
+    height: 100%;
+    overflow: auto;
+}
+
+#score{
+    width: auto;
+    height: 50%;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 上下中央 */
+    align-items: center;     /* 左右中央 */
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 10px;
+}
